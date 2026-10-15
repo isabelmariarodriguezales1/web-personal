@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g1" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" rx="18" fill="#071226" />
+  <rect x="80" y="80" width="1040" height="540" rx="12" fill="#0b1228" stroke="url(#g1)" stroke-width="2"/>
+  <rect x="120" y="120" width="960" height="160" rx="8" fill="#071226"/>
+  <g transform="translate(150,150)">
+    <rect x="0" y="0" width="200" height="120" rx="8" fill="#071226" opacity="0.9"/>
+    <rect x="220" y="0" width="520" height="120" rx="8" fill="#071226" opacity="0.6"/>
+    <rect x="0" y="140" width="760" height="18" rx="8" fill="#0b1228"/>
+  </g>
+  <!-- nodes -->
+  <g stroke="#9aa6b2" stroke-width="3" stroke-linecap="round">
+    <line x1="320" y1="360" x2="480" y2="300" stroke-opacity="0.18"/>
+    <line x1="420" y1="420" x2="560" y2="360" stroke-opacity="0.18"/>
+  </g>
+  <g>
+    <circle cx="320" cy="360" r="18" fill="url(#g1)"/>
+    <circle cx="480" cy="300" r="18" fill="#06b6d4" opacity="0.9"/>
+    <circle cx="560" cy="360" r="14" fill="#4f46e5" opacity="0.95"/>
+  </g>
+  <text x="120" y="660" fill="#9aa6b2" font-family="Inter, sans-serif" font-size="28">cuantomecuestacontratar.es — proyecto personal</text>
+</svg>
