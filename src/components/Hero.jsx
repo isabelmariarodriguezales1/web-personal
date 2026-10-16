@@ -8,6 +8,7 @@ export default function Hero(){
         <div className="hero-text">
           <h1>Desarrollo web y soluciones digitales a medida</h1>
           <p>Soy ingeniera informática y ayudo a profesionales, emprendedores y empresas a convertir sus ideas en páginas web y herramientas digitales funcionales, modernas y adaptadas a sus necesidades.</p>
+          <p className="hero-cta">¡Visita mi GitHub! <a href="https://github.com/isabelmariarodriguezales1" target="_blank" rel="noopener noreferrer">github.com/isabelmariarodriguezales1</a></p>
           <div className="hero-actions">
             <a href="#contacto" className="btn primary">Cuéntame tu proyecto</a>
             <a href="#proyectos" className="btn">Ver proyectos</a>

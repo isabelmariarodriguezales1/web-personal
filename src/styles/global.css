@@ -27,9 +27,15 @@ body{margin:0;font-family:Inter, 'Space Grotesk', ui-sans-serif, system-ui, -app
 
 .container{max-width:1100px;margin:0 auto;padding:2.25rem}
 
-.site-header{position:sticky;top:12px;z-index:60}
-.header-inner{display:flex;align-items:center;justify-content:space-between;background:transparent;padding:0.5rem;border-radius:12px}
+.site-header{position:sticky;top:12px;z-index:60;display:block}
+.site-header::before{content:"";position:absolute;inset:6px 0 0 0;pointer-events:none}
+.header-inner{display:flex;align-items:center;justify-content:space-between;background:linear-gradient(180deg, rgba(7,18,38,0.45), rgba(7,18,38,0.35));padding:0.6rem;border-radius:12px;backdrop-filter:blur(8px);box-shadow:0 6px 22px rgba(2,6,23,0.6);transition:background .2s,box-shadow .2s}
 .brand{font-weight:700;font-family:'Space Grotesk', Inter, sans-serif;font-size:1.05rem;color:var(--accent-plain)}
+
+.external-links{display:flex;align-items:center;margin-left:0.75rem}
+.github-link{color:var(--muted);display:inline-flex;align-items:center;margin-left:0.5rem}
+.github-link svg{display:block}
+.github-link:hover{color:var(--text)}
 
 .nav{display:flex;gap:0.75rem;align-items:center}
 .nav a{color:var(--text);text-decoration:none;padding:0.45rem 0.6rem;border-radius:10px;transition:background .18s,transform .18s}
@@ -47,6 +53,10 @@ body{margin:0;font-family:Inter, 'Space Grotesk', ui-sans-serif, system-ui, -app
 .hero-photo{display:flex;justify-content:center}
 .hero-photo img{width:100%;max-width:320px;height:auto;border-radius:18px;object-fit:cover;box-shadow:0 12px 40px rgba(8,20,45,0.08);border:1px solid rgba(15,23,36,0.04)}
 .hero-actions .btn{margin-right:0.6rem}
+
+.hero-cta{margin-top:1rem;font-weight:600;color:var(--text)}
+.hero-cta a{color:var(--accent-plain);text-decoration:none;margin-left:0.45rem}
+.hero-cta a:hover{text-decoration:underline}
 
 .section-title{font-size:1.2rem;margin-bottom:1rem}
 
@@ -82,6 +92,11 @@ body{margin:0;font-family:Inter, 'Space Grotesk', ui-sans-serif, system-ui, -app
   .nav a{display:block;padding:0.55rem 0.9rem;margin:0.15rem 0}
   .nav-toggle{display:inline-flex}
   .header-inner{gap:8px}
+}
+
+/* Ensure mobile nav background matches dark theme */
+@media(max-width:920px){
+  .nav{background:linear-gradient(180deg, rgba(7,18,38,0.95), rgba(7,18,38,0.9));}
 }
 
 @media (prefers-reduced-motion: reduce){
