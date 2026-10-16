@@ -1,4 +1,6 @@
 import React from 'react'
+import cuantThumb from '../../img/cuantocuestacontratar.png'
+import aiImg from '../../img/ai.png'
 
 export default function Projects(){
   return (
@@ -8,7 +10,7 @@ export default function Projects(){
         <article className="project-card">
           <div className="project-media">
             <a href="https://cuantocuestacontratar.es/" target="_blank" rel="noopener noreferrer">
-              <img src="/img/cuantocuestacontratar.png" alt="Miniatura cuantocuestacontratar — representación IA" loading="lazy" />
+              <img src={cuantThumb} alt="Miniatura cuantocuestacontratar — representación IA" loading="lazy" />
             </a>
           </div>
           <div className="project-body">
@@ -21,7 +23,7 @@ export default function Projects(){
 
         <article className="project-card">
           <div className="project-media">
-            <img src="/img/ai.png" alt="Miniatura TFG — representación de IA y datos" loading="lazy" />
+            <img src={aiImg} alt="Miniatura TFG — representación de IA y datos" loading="lazy" />
           </div>
           <div className="project-body">
             <h3>Trabajo Fin de Grado — IA aplicada a RRHH</h3>

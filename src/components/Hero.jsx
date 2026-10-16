@@ -1,4 +1,5 @@
 import React from 'react'
+import fotoUrl from '../../img/foto.JPG'
 
 export default function Hero(){
   return (
@@ -13,7 +14,7 @@ export default function Hero(){
           </div>
         </div>
         <div className="hero-photo">
-          <img src="/img/foto.JPG" alt="Foto de Isabel María Rodríguez Alés" loading="lazy" />
+          <img src={fotoUrl} alt="Foto de Isabel María Rodríguez Alés" loading="lazy" />
         </div>
       </div>
     </section>
